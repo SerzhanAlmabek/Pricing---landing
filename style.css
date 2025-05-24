@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-y: scroll;
+}
+
+.layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.header{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 60px;
+    max-width: 1000px;
+    width: 100%;
+    height: 100px;
+}
+.nav-link{
+    font-size: 24px;
+    color: inherit; 
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;  
+    font-weight: normal;
+    text-align: center;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.price {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin-bottom: auto;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;    
+}
+.cardBasic, .cardPro, .cardBusinness{
+    font-size: 1.8rem;
+}
+
+.card1:hover, .card2:hover, .card3:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.priceH1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    align-self: center;
+    text-align: center;
+}
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 15px;
+
+}
+.card2{
+    background-color: #dde7f2;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    max-width: 1200px; 
+    width: 100%;
+    height: 100%;
+
+}
+.portfolioH1{
+    display: flex;
+    align-self: center;
+    margin-top: 60px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.images{
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+    gap: 20px;
+    
+
+}
+.img-kon1{
+    grid-area: img1;
+}
+.img1, .img2, .img3, .img4, .img5, .img6{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.img-kon2{
+    grid-area: img2;
+}
+.img-kon3{
+    grid-area: img3;
+}
+.img-kon4{
+    grid-area: img4;
+}
+.img-kon5{
+    grid-area: img5;
+}
+.img-kon6{
+    grid-area: img6;
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    max-width: 800px; 
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+}
+@media(max-width:780px){
+    .header{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+        height: auto;
+    }
+    .nav-link {
+    font-size: 18px;
+  }
+  .card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .priceH1, .portfolioH1{
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .images{
+
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6";
+    grid-template-columns: 1fr;
+  }
+.about{
+    font-size: 1.5rem;
+}
+.cardBasic, .cardPro, .cardBusinness{
+    font-size: 1.3rem;
+}
+}

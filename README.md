@@ -10,6 +10,9 @@
 
 ## 📸 Превью
 
+![Превью 1](картинки/preview1.png)
+![Превью 2](картинки/preview2.png)
+
 ## ⚙️ Структура проекта
 
 /
@@ -17,14 +20,9 @@
 ├── style.css
 ├── README.md
 └── картинки/
-    └── preview1.png
-        preview2.png
-    
-    
-
+├── preview1.png
+└── preview2.png
 ## 🚀 Как запустить
 
-1. Склонируйте репозиторий:
-   ```bash
-   git clone https://github.com/SerzhanAlmabek/Pricing---landing.git
-
+Склонируйте репозиторий:
+git clone https://github.com/SerzhanAlmabek/Pricing---landing.git
